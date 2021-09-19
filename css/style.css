@@ -1,0 +1,333 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url(/fonts/Lora-VariableFont_wght.ttf);
+}
+
+header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #e25e3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5vh 0px;
+}
+
+header img {
+  padding-left: 30px;
+  width: 60px;
+  height: 60px;
+}
+
+header ul {
+  margin-top: 10px;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header ul li {
+  margin: 0 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  font-family: Lora;
+  font-size: 20pt;
+  font-style: italic;
+  font-weight: 700;
+}
+
+header ul li a:hover {
+  color: #3f1004;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+main section {
+  padding: 5vh 0;
+}
+
+main .header__banner {
+  background-color: #e25e3d;
+  height: 70vh;
+  width: 100%;
+}
+
+main .header__banner .header_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../img/header__banner.jpg);
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  opacity: 0.8;
+  padding: 2.5vh 1vh;
+}
+
+main .header__banner .header_text h1 {
+  font-family: Lora;
+  font-size: 32pt;
+  margin-top: 5vh;
+}
+
+main .header__banner .header_text h2 {
+  font-family: Lora;
+  font-size: 18pt;
+  margin-top: 1vh;
+}
+
+main .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .description .wrapper {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .description .wrapper h1 {
+  text-align: center;
+  font-family: Lora;
+  font-size: 28pt;
+  width: 100%;
+  margin: 3vh 0;
+}
+
+main .description .wrapper p {
+  font-family: Lora;
+  font-size: 18pt;
+  width: 100%;
+  line-height: 5vh;
+}
+
+main .duties {
+  background-color: #e7e7e7;
+  padding: 5vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .duties h1 {
+  width: 100%;
+  text-align: center;
+  font-family: Lora;
+  font-size: 28pt;
+  margin-bottom: 2vh;
+}
+
+main .duties .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .duties .wrapper .wrapper__item {
+  border-radius: 10px;
+  background-color: #e25e3d;
+  margin: 2vh 0;
+  padding: 2vh;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .duties .wrapper .wrapper__item img {
+  width: 15vh;
+  height: 15vh;
+  border-radius: 10px;
+}
+
+main .duties .wrapper .wrapper__item p {
+  padding-left: 2vh;
+  font-family: Lora;
+  font-size: 20pt;
+}
+
+main .numbers {
+  padding: 5vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .numbers h1 {
+  width: 100%;
+  text-align: center;
+  font-family: Lora;
+  font-size: 28pt;
+  margin-bottom: 2vh;
+}
+
+main .numbers .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .numbers .wrapper .wrapper__item {
+  border-radius: 10px;
+  padding: 2vh;
+  margin: 4vh;
+  width: 35%;
+  background-color: #e25e3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .numbers .wrapper .wrapper__item img {
+  width: 35%;
+  height: width;
+}
+
+main .numbers .wrapper .wrapper__item .wrapper__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 60%;
+}
+
+main .numbers .wrapper .wrapper__item .wrapper__text p {
+  font-family: Lora;
+  font-size: 20pt;
+}
+
+main .numbers .wrapper .wrapper__item .wrapper__text button {
+  margin-top: 1vh;
+  border-radius: 5px;
+  border: #201111 2px solid;
+  background-color: white;
+  color: #3f1004;
+  font-family: Lora;
+  font-size: 18pt;
+  width: 100%;
+}
+
+main .gallery {
+  background-color: #e7e7e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .gallery h1 {
+  text-align: center;
+  font-family: Lora;
+  font-size: 28pt;
+}
